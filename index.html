@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary App in JavaScript</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- CDN Link for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>English Dictionary</header>
+      <div class="search">
+        <input type="text" placeholder="Search a word" required />
+        <i class="fas fa-search"></i>
+        <span class="material-icons">close</span>
+      </div>
+
+      <p class="info-text">
+        Type a word and press enter to get meaning, example, pronunciation, and
+        synonyms of a word
+      </p>
+
+      <ul>
+        <li class="word">
+          <div class="details">
+            <p>___</p>
+          </div>
+          <div class="phonetic"></div>
+        </li>
+        <div class="content">
+          <!-- <li class="meaning">
+            <div class="details">
+              <p>Meaning</p>
+              <span>feeling or showing pleasure or contentment</span>
+            </div>
+          </li>
+
+          <li class="example">
+            <div class="details">
+              <p>Example</p>
+              <span>feeling or showing pleasure or contentment</span>
+            </div>
+          </li> -->
+
+          <!-- <li class="synonyms">
+            <div class="details">
+              <p>Synonyms</p>
+              <div class="list">
+                <span>abc</span>
+              </div>
+            </div>
+          </li> -->
+        </div>
+      </ul>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

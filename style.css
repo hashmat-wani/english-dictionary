@@ -1,0 +1,194 @@
+/* Import Google Font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #43affc;
+  min-height: 100vh;
+  /* background-size: cover; */
+}
+.wrapper {
+  /* margin: 0 auto; */
+  background: #fff;
+  width: 420px;
+  border-radius: 7px;
+  padding: 28px 28px 45px;
+}
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+
+.wrapper header {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.wrapper .search {
+  margin: 35px 0 18px;
+  position: relative;
+  /* border: 1px solid red; */
+}
+
+.search input {
+  height: 53px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  padding: 0 42px;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+
+.search input:focus {
+  padding: 0 41px;
+  border: 2px solid #43affc;
+}
+
+.search input:focus ~ i {
+  color: #43affc;
+}
+.search input::placeholder {
+  color: #b8b8b8;
+}
+
+.search :where(i, span) {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search i {
+  left: 18px;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.search span {
+  right: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+}
+.search input:valid ~ span {
+  display: block;
+}
+
+.wrapper .info-text {
+  font-size: 13px;
+  color: #9a9a9a;
+  margin: -3px 0 -10px;
+}
+
+.wrapper.active .info-text {
+  display: none;
+}
+
+.wrapper ul {
+  /* border: 1px solid red; */
+  opacity: 0;
+  /* display: none; */
+  overflow: hidden;
+  height: 0;
+  transition: all 0.5s ease;
+}
+
+.wrapper.active ul {
+  /* display: block; */
+  visibility: visible;
+  opacity: 1;
+  /* height: 303px; */
+  height: 100%;
+}
+
+.wrapper ul li {
+  /* border: 1px solid red; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  padding-bottom: 17px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #ccc;
+}
+
+ul li:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+ul .word .phonetic > div {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.phonetic p {
+  color: #989898;
+}
+
+ul .word p {
+  font-size: 22px;
+  font-weight: 500;
+}
+ul .word span {
+  font-size: 12px;
+  color: #989898;
+}
+
+ul .word i {
+  font-size: 15px;
+  color: #9999;
+  cursor: pointer;
+}
+
+.content li {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  /* border: 1px solid red; */
+  padding-left: 10px;
+  border-left: 3px solid #43affc;
+  border-radius: 4px 0 0 4px;
+}
+
+.content li .details p {
+  /* border: 1px solid red; */
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.content li .details span {
+  /* border: 1px solid red; */
+  font-size: 13px;
+  color: #7e7e7e;
+}
+.synonyms .details .list {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5px;
+}
+
+.synonyms .details .list span {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: underline;
+  cursor: pointer;
+}
