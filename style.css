@@ -17,7 +17,6 @@ body {
   /* background-size: cover; */
 }
 .wrapper {
-  /* margin: 0 auto; */
   background: #fff;
   width: 420px;
   border-radius: 7px;
@@ -99,26 +98,18 @@ body {
 .wrapper ul {
   /* border: 1px solid red; */
   opacity: 0;
-  /* display: none; */
   overflow: hidden;
   height: 0;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
 }
 
 .wrapper.active ul {
   /* display: block; */
-  visibility: visible;
   opacity: 1;
-  /* height: 303px; */
   height: 100%;
 }
 
 .wrapper ul li {
-  /* border: 1px solid red; */
-  /* display: flex; */
-  /* align-items: center; */
-  /* flex-direction: column; */
-  /* justify-content: space-between; */
   padding-bottom: 17px;
   margin-bottom: 14px;
   border-bottom: 1px solid #ccc;
@@ -135,11 +126,14 @@ ul .word .phonetic > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 6px;
+  margin-top: 8px;
 }
 
 .phonetic p {
   color: #989898;
+}
+.phonetic i:hover {
+  color: #43affc;
 }
 
 ul .word p {
@@ -191,4 +185,33 @@ ul .word i {
   flex-wrap: wrap;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.footer_top {
+  /* border: 1px solid red; */
+  color: #43affc;
+  border-top: 1px solid #bfbfbf;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 15px;
+  margin-top: 40px;
+  padding: 20px 0;
+}
+
+.fa:hover {
+  transform: scale(0.9, 0.9);
+}
+.fa {
+  color: #43affc;
+  padding-top: 4px;
+  cursor: pointer;
+}
+.footer_bottom {
+  text-align: center;
+  border-top: 1px solid #bfbfbf;
+  margin: 0 70px;
+  font-size: small;
+  color: #bfbfbf;
+  padding-top: 20px;
 }
