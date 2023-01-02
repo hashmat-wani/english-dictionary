@@ -75,10 +75,12 @@ body {
 }
 
 .search span {
-  right: 15px;
+  right: 5px;
   font-size: 16px;
   cursor: pointer;
   display: none;
+  padding: 10px;
+  /* border: 1px solid red; */
 }
 .search input:valid ~ span {
   display: block;
@@ -95,7 +97,6 @@ body {
 }
 
 .wrapper ul {
-  /* border: 1px solid red; */
   opacity: 0;
   overflow: hidden;
   height: 0;
